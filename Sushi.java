@@ -7,7 +7,7 @@ public class Sushi extends Dish{
   private String ingredients; // the ingredients of the Sushi
   private boolean hasTempura; // Whether the Sushi has Tempura or not
 
-  //Sets ingredients to Rice, Seaweed, Crab, and Cucmber
+  //Sets ingredients to Rice, Seaweed, Crab, and Cucumber
   //Sets hasTempura to false 
   
   public Sushi(){
@@ -18,7 +18,7 @@ public class Sushi extends Dish{
   }
 
   // Sets the name to the specified name, price to the specified price
-  // Amount to the specified amount, ingredients to the specified ingredints
+  // Amount to the specified amount, ingredients to the specified ingredients
   // and hasTempura to the specified status 
 
   public Sushi(String name, double price, int amount, String ingredients, boolean hasTempura ) {
@@ -27,7 +27,12 @@ super(name, price, amount);
   this.hasTempura = hasTempura; 
 } 
 
-  // retursn the value assigned to ingredients 
+  public Sushi(String name, double price, int amount, String ingredients ) {
+super(name, price, amount);
+ this.ingredients = ingredients;
+ this.hasTempura = true; 
+  }
+    // returns the value assigned to ingredients 
   
   public String ingredients(){
     return ingredients; 

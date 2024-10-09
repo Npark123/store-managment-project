@@ -12,7 +12,7 @@ public Side(){
 }
 
   // Sets the name to the specified name, price to the specified price
-  // Amount to the specified amount, and isDesert to the specfied status 
+  // Amount to the specified amount, and isDessert to the specified status 
  
   public Side(String name, double price, int amount, boolean isDessert) {
 super(name, price, amount);
@@ -20,14 +20,20 @@ this.isDessert = isDessert;
     
 
 } 
+    public Side(String name, double price, int amount) {
+super(name, price, amount);
+this.isDessert = false; 
+    
 
-  // Returns wheether or not the side is a Dessert or not 
+} 
+
+  // Returns whether or not the side is a Dessert or not 
  
   public boolean isDessert(){
    return isDessert;
   }
 
-  // Sets isDessert to the specfied status 
+  // Sets isDessert to the specified status 
   
   public void setIsDessert(boolean newIsDessert){
     isDessert = newIsDessert;
